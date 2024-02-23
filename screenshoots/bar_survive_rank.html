@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-404a85a44b348f41f0e6447a129e4054"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "Survived", "type": "nominal"}, "column": {"field": "Title", "type": "nominal"}, "x": {"field": "Survived", "type": "nominal"}, "y": {"aggregate": "count", "type": "quantitative"}}, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-404a85a44b348f41f0e6447a129e4054": [{"PassengerId": 31, "Survived": "No", "Pclass": 1, "Name": "Uruchurtu, Don. Manuel E", "Sex": "male", "Age": 40.0, "SibSp": 0, "Parch": 0, "Ticket": "PC 17601", "Fare": 27.7208, "Cabin": null, "Embarked": "C", "Title": "Don", "Rank": true}, {"PassengerId": 150, "Survived": "No", "Pclass": 2, "Name": "Byles, Rev. Thomas Roussel Davids", "Sex": "male", "Age": 42.0, "SibSp": 0, "Parch": 0, "Ticket": "244310", "Fare": 13.0, "Cabin": null, "Embarked": "S", "Title": "Rev", "Rank": true}, {"PassengerId": 151, "Survived": "No", "Pclass": 2, "Name": "Bateman, Rev. Robert James", "Sex": "male", "Age": 51.0, "SibSp": 0, "Parch": 0, "Ticket": "S.O.P. 1166", "Fare": 12.525, "Cabin": null, "Embarked": "S", "Title": "Rev", "Rank": true}, {"PassengerId": 246, "Survived": "No", "Pclass": 1, "Name": "Minahan, Dr. William Edward", "Sex": "male", "Age": 44.0, "SibSp": 2, "Parch": 0, "Ticket": "19928", "Fare": 90.0, "Cabin": "C78", "Embarked": "Q", "Title": "Dr", "Rank": true}, {"PassengerId": 250, "Survived": "No", "Pclass": 2, "Name": "Carter, Rev. Ernest Courtenay", "Sex": "male", "Age": 54.0, "SibSp": 1, "Parch": 0, "Ticket": "244252", "Fare": 26.0, "Cabin": null, "Embarked": "S", "Title": "Rev", "Rank": true}, {"PassengerId": 318, "Survived": "No", "Pclass": 2, "Name": "Moraweck, Dr. Ernest", "Sex": "male", "Age": 54.0, "SibSp": 0, "Parch": 0, "Ticket": "29011", "Fare": 14.0, "Cabin": null, "Embarked": "S", "Title": "Dr", "Rank": true}, {"PassengerId": 399, "Survived": "No", "Pclass": 2, "Name": "Pain, Dr. Alfred", "Sex": "male", "Age": 23.0, "SibSp": 0, "Parch": 0, "Ticket": "244278", "Fare": 10.5, "Cabin": null, "Embarked": "S", "Title": "Dr", "Rank": true}, {"PassengerId": 450, "Survived": "Yes", "Pclass": 1, "Name": "Peuchen, Major. Arthur Godfrey", "Sex": "male", "Age": 52.0, "SibSp": 0, "Parch": 0, "Ticket": "113786", "Fare": 30.5, "Cabin": "C104", "Embarked": "S", "Title": "Major", "Rank": true}, {"PassengerId": 537, "Survived": "No", "Pclass": 1, "Name": "Butt, Major. Archibald Willingham", "Sex": "male", "Age": 45.0, "SibSp": 0, "Parch": 0, "Ticket": "113050", "Fare": 26.55, "Cabin": "B38", "Embarked": "S", "Title": "Major", "Rank": true}, {"PassengerId": 557, "Survived": "Yes", "Pclass": 1, "Name": "Duff Gordon, Lady. (Lucille Christiana Sutherland) (\"Mrs Morgan\")", "Sex": "female", "Age": 48.0, "SibSp": 1, "Parch": 0, "Ticket": "11755", "Fare": 39.6, "Cabin": "A16", "Embarked": "C", "Title": "Lady", "Rank": true}, {"PassengerId": 600, "Survived": "Yes", "Pclass": 1, "Name": "Duff Gordon, Sir. Cosmo Edmund (\"Mr Morgan\")", "Sex": "male", "Age": 49.0, "SibSp": 1, "Parch": 0, "Ticket": "PC 17485", "Fare": 56.9292, "Cabin": "A20", "Embarked": "C", "Title": "Sir", "Rank": true}, {"PassengerId": 627, "Survived": "No", "Pclass": 2, "Name": "Kirkland, Rev. Charles Leonard", "Sex": "male", "Age": 57.0, "SibSp": 0, "Parch": 0, "Ticket": "219533", "Fare": 12.35, "Cabin": null, "Embarked": "Q", "Title": "Rev", "Rank": true}, {"PassengerId": 633, "Survived": "Yes", "Pclass": 1, "Name": "Stahelin-Maeglin, Dr. Max", "Sex": "male", "Age": 32.0, "SibSp": 0, "Parch": 0, "Ticket": "13214", "Fare": 30.5, "Cabin": "B50", "Embarked": "C", "Title": "Dr", "Rank": true}, {"PassengerId": 648, "Survived": "Yes", "Pclass": 1, "Name": "Simonius-Blumer, Col. Oberst Alfons", "Sex": "male", "Age": 56.0, "SibSp": 0, "Parch": 0, "Ticket": "13213", "Fare": 35.5, "Cabin": "A26", "Embarked": "C", "Title": "Col", "Rank": true}, {"PassengerId": 661, "Survived": "Yes", "Pclass": 1, "Name": "Frauenthal, Dr. Henry William", "Sex": "male", "Age": 50.0, "SibSp": 2, "Parch": 0, "Ticket": "PC 17611", "Fare": 133.65, "Cabin": null, "Embarked": "S", "Title": "Dr", "Rank": true}, {"PassengerId": 695, "Survived": "No", "Pclass": 1, "Name": "Weir, Col. John", "Sex": "male", "Age": 60.0, "SibSp": 0, "Parch": 0, "Ticket": "113800", "Fare": 26.55, "Cabin": null, "Embarked": "S", "Title": "Col", "Rank": true}, {"PassengerId": 746, "Survived": "No", "Pclass": 1, "Name": "Crosby, Capt. Edward Gifford", "Sex": "male", "Age": 70.0, "SibSp": 1, "Parch": 1, "Ticket": "WE/P 5735", "Fare": 71.0, "Cabin": "B22", "Embarked": "S", "Title": "Capt", "Rank": true}, {"PassengerId": 760, "Survived": "Yes", "Pclass": 1, "Name": "Rothes, the Countess. of (Lucy Noel Martha Dyer-Edwards)", "Sex": "female", "Age": 33.0, "SibSp": 0, "Parch": 0, "Ticket": "110152", "Fare": 86.5, "Cabin": "B77", "Embarked": "S", "Title": "the Countess", "Rank": true}, {"PassengerId": 767, "Survived": "No", "Pclass": 1, "Name": "Brewe, Dr. Arthur Jackson", "Sex": "male", "Age": null, "SibSp": 0, "Parch": 0, "Ticket": "112379", "Fare": 39.6, "Cabin": null, "Embarked": "C", "Title": "Dr", "Rank": true}, {"PassengerId": 797, "Survived": "Yes", "Pclass": 1, "Name": "Leader, Dr. Alice (Farnham)", "Sex": "female", "Age": 49.0, "SibSp": 0, "Parch": 0, "Ticket": "17465", "Fare": 25.9292, "Cabin": "D17", "Embarked": "S", "Title": "Dr", "Rank": true}, {"PassengerId": 823, "Survived": "No", "Pclass": 1, "Name": "Reuchlin, Jonkheer. John George", "Sex": "male", "Age": 38.0, "SibSp": 0, "Parch": 0, "Ticket": "19972", "Fare": 0.0, "Cabin": null, "Embarked": "S", "Title": "Jonkheer", "Rank": true}, {"PassengerId": 849, "Survived": "No", "Pclass": 2, "Name": "Harper, Rev. John", "Sex": "male", "Age": 28.0, "SibSp": 0, "Parch": 1, "Ticket": "248727", "Fare": 33.0, "Cabin": null, "Embarked": "S", "Title": "Rev", "Rank": true}, {"PassengerId": 887, "Survived": "No", "Pclass": 2, "Name": "Montvila, Rev. Juozas", "Sex": "male", "Age": 27.0, "SibSp": 0, "Parch": 0, "Ticket": "211536", "Fare": 13.0, "Cabin": null, "Embarked": "S", "Title": "Rev", "Rank": true}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
